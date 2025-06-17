@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 30px; /* Adjust this to match your navbar height */
+  scroll-padding-top: 25px; /* Adjust this to match your navbar height */
 }
 
 
@@ -29,7 +29,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 25px;
+  height: 30px;
 }
 
 .navbar {
@@ -160,6 +160,17 @@ header {
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--emerald-accent);
+}
+
+.profile-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
 }
 
 .dropdown-menu {
