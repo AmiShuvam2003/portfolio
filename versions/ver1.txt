@@ -9,6 +9,7 @@
 <body class="dark-theme">
   <header>
     <nav class="navbar">
+      <h1 class="logo">Shuvam Samanta</h1>
       <ul class="nav-links">
         <li>
             <div class="profile-dropdown">
@@ -16,38 +17,29 @@
                    <img src="homepic.png" alt="Profile" />
                 </button>
                 <div class="dropdown-menu" id="dropdownMenu">
-                  <a href="#home">Home</a>
-                  <a href="#about">About</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#contact">Contact</a>
-
-                  <div class="submenu-container">
-                    <span class="submenu-toggle">Links ▸</span>
-
-                    <!-- Nested dropdown -->
-                    <div class="submenu">
-                      <a href="https://github.com/AmiShuvam2003" target="_blank">GitHub</a>
-                      <a href="https://www.linkedin.com/in/shuvamsamanta/" target="_blank">LinkedIn</a>
-                    </div>
-                  </div>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://github.com/AmiShuvam2003" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/shuvamsamanta/" target="_blank">LinkedIn</a>
                 </div>
             </div>
         </li>
       </ul>
-      <h1 class="logo">Shuvam Samanta</h1>
     </nav>
   </header>
 
   <section id="home" class="hero">
-    <div class="hero-text">
+  <div class="hero-text">
     <h2>Hi, I'm Shuvam Samanta</h2>
     <p>A passionate CS & Electronics student building AI & Web things.</p>
     <a href="#projects" class="btn">View Projects</a>
-    </div>
-    <div class="hero-image">
-      <img src="homepic.png" alt="LinkedIn Profile" />
-    </div>
-  </section>
+  </div>
+  <div class="hero-image">
+    <img src="homepic.png" alt="LinkedIn Profile" />
+  </div>
+</section>
 
 
   <section id="about" class="section">
