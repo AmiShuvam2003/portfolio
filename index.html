@@ -87,33 +87,32 @@
   </footer>
 
 <script src="script.js">
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggles = document.querySelectorAll(".submenu-toggle");
+  document.addEventListener("DOMContentLoaded", () => {
+  const toggles = document.querySelectorAll(".submenu-toggle");
 
-    toggles.forEach(toggle => {
-      toggle.addEventListener("click", function (e) {
-        const submenu = this.nextElementSibling;
+  toggles.forEach(toggle => {
+    toggle.addEventListener("click", (e) => {
+      const submenu = toggle.nextElementSibling;
 
-        // Close other open submenus
-        document.querySelectorAll(".submenu").forEach(menu => {
-          if (menu !== submenu) menu.style.display = "none";
-        });
+      // Toggle .show class
+      submenu.classList.toggle("show");
 
-        // Toggle current submenu
-        submenu.style.display = submenu.style.display === "block" ? "none" : "block";
-
-        // Prevent default scroll on click (if inside anchor)
-        e.stopPropagation();
-      });
-    });
-
-    // Close dropdown if clicked outside
-    document.addEventListener("click", () => {
+      // Close all others
       document.querySelectorAll(".submenu").forEach(menu => {
-        menu.style.display = "none";
+        if (menu !== submenu) menu.classList.remove("show");
       });
+
+      // Prevent the event from bubbling to document click
+      e.stopPropagation();
     });
   });
+
+  // Close on outside click
+  document.addEventListener("click", () => {
+    document.querySelectorAll(".submenu").forEach(menu => menu.classList.remove("show"));
+  });
+});
+
 </script>
 </body>
 </html>
