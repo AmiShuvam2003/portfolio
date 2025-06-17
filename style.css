@@ -15,7 +15,9 @@ html {
 
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-size: 16px; /* default base */
+  line-height: 1.7;
   background: var(--bg);
   color: var(--text);
   margin: 0;
@@ -44,8 +46,8 @@ header {
 
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
   color: var(--emerald-accent);
   line-height: 1;       /* No weird spacing */
   margin: 0;            /* Remove default h1 margins */
@@ -114,12 +116,13 @@ header {
 
 
 .hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 700;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 2rem;
 }
 
@@ -145,6 +148,8 @@ header {
 }
 
 .section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -170,11 +175,11 @@ header {
 }
 
 .theme-toggle img {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  transform: translateY(2px);
+  transform: translateY(-1px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
