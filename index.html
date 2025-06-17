@@ -15,16 +15,32 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button id="toggle-theme">🌓</button></li>
+        <li>
+            <div class="profile-dropdown">
+                <button class="theme-toggle" id="profileToggle">
+                   <img src="homepic.png" alt="Profile" />
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="https://github.com/AmiShuvam2003" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/shuvamsamanta/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </li>
       </ul>
     </nav>
   </header>
 
   <section id="home" class="hero">
+  <div class="hero-text">
     <h2>Hi, I'm Shuvam 👋</h2>
     <p>A passionate CS & Electronics student building AI & Web things.</p>
     <a href="#projects" class="btn">View Projects</a>
-  </section>
+  </div>
+  <div class="hero-image">
+    <img src="homepic.png" alt="GitHub Profile" />
+  </div>
+</section>
+
 
   <section id="about" class="section">
     <h2>About Me</h2>
@@ -63,6 +79,6 @@
     <p>© 2025 Shuvam. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
