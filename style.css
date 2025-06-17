@@ -379,3 +379,9 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+@media (hover: none) {
+  .submenu-container:hover .submenu {
+    display: none;
+  }
+}
