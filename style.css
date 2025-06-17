@@ -9,6 +9,7 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
   scroll-padding-top: 35px; /* Adjust this to match your navbar height */
 }
@@ -38,6 +39,7 @@ header {
   top: 0;
   z-index: 10;
   height: 20px;
+  margin-bottom: 2px;
 }
 
 .navbar {
@@ -140,6 +142,8 @@ header {
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
   font-weight: bold;
+  min-height: 44px;
+  min-width: 120px;
   text-decoration: none;
   transition: background 0.3s;
 }
@@ -336,6 +340,7 @@ footer {
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 3rem 1.2rem;
   }
 
   .hero-text {
@@ -346,5 +351,31 @@ footer {
     width: 180px;
     height: 180px;
   }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
 }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+}
