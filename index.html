@@ -87,8 +87,8 @@
   <section id="contact" class="section">
   <h2>Contact Me</h2>
   <form id="contact-form">
-    <input type="text" name="from_name" placeholder="Your Name" required />
-    <input type="email" name="reply_to" placeholder="Your Email" required />
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
     <textarea name="message" placeholder="Your Message" required></textarea>
 
     <div id="recaptcha-container"></div>
@@ -136,33 +136,33 @@
     <p>© 2025 Shuvam Samanta. All rights reserved.</p>
   </footer>
 
-<script src="script.js">
-  document.addEventListener("DOMContentLoaded", () => {
-  const toggles = document.querySelectorAll(".submenu-toggle");
+  <script src="script.js">
+    document.addEventListener("DOMContentLoaded", () => {
+    const toggles = document.querySelectorAll(".submenu-toggle");
 
-  toggles.forEach(toggle => {
-    toggle.addEventListener("click", (e) => {
-      const submenu = toggle.nextElementSibling;
+    toggles.forEach(toggle => {
+      toggle.addEventListener("click", (e) => {
+        const submenu = toggle.nextElementSibling;
 
-      // Toggle .show class
-      submenu.classList.toggle("show");
+        // Toggle .show class
+        submenu.classList.toggle("show");
 
-      // Close all others
-      document.querySelectorAll(".submenu").forEach(menu => {
-        if (menu !== submenu) menu.classList.remove("show");
+        // Close all others
+        document.querySelectorAll(".submenu").forEach(menu => {
+          if (menu !== submenu) menu.classList.remove("show");
+        });
+
+        // Prevent the event from bubbling to document click
+        e.stopPropagation();
       });
+    });
 
-      // Prevent the event from bubbling to document click
-      e.stopPropagation();
+    // Close on outside click
+    document.addEventListener("click", () => {
+      document.querySelectorAll(".submenu").forEach(menu => menu.classList.remove("show"));
     });
   });
 
-  // Close on outside click
-  document.addEventListener("click", () => {
-    document.querySelectorAll(".submenu").forEach(menu => menu.classList.remove("show"));
-  });
-});
-
-</script>
+  </script>
 </body>
 </html>

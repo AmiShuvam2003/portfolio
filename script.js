@@ -1,12 +1,6 @@
 window.onload = function () {
   console.log("Page is fully loaded");
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Thanks for your message! 🚀 I’ll get back to you soon.");
-  this.reset();
-});
-
   const profileToggle = document.getElementById("profileToggle");
   const dropdownMenu = document.getElementById("dropdownMenu");
 
