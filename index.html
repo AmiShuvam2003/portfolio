@@ -85,14 +85,52 @@
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+    <input type="email" name="reply_to" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <div id="recaptcha-container"></div>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+
+  <style>
+    #recaptcha-container {
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .g-recaptcha {
+      transform: scale(0.95);
+      transform-origin: 0 0;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.75rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    #contact-form button {
+      padding: 0.5rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</section>
+
 
   <footer>
     <p>© 2025 Shuvam Samanta. All rights reserved.</p>
