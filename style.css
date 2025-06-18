@@ -414,6 +414,10 @@ footer {
     width: 14px;
     height: 14px;
   }
+
+  .submenu-container {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
