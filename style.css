@@ -392,7 +392,7 @@ footer {
   }
 
   .section {
-    padding: 2rem 1rem;
+    padding: 2rem 1.2rem;
   }
 
   .btn {
@@ -418,6 +418,43 @@ footer {
   .submenu-container {
     display: none;
   }
+
+  #contact {
+    padding: 2rem 1.2rem;
+    box-sizing: border-box;
+  }
+
+  #contact-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 1rem;
+    padding: 0.75rem;
+    width: 75%;
+  }
+
+  #contact-form button {
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto; /* Center the form */
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #recaptcha-container {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+
 }
 
 @media (max-width: 480px) {
